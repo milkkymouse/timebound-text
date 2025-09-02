@@ -356,7 +356,7 @@ murals.add_exit("left", "Pillar Garden")
 murals.add_exit("right", "Obsidian Archway")
 
 garden.add_exit("back", "Hall of Murals")
-garden.add_exit("depper", "Statue of the Gods")
+garden.add_exit("deeper", "Statue of the Gods")
 
 archway.add_exit("back", "Hall of Murals")
 archway.add_exit("deeper", "Statue of the Gods")

@@ -457,8 +457,9 @@ while run:
         print("You have freed your souls from this cruel game! You win!")
         print("Final Status:")
         display_player()
-        print("Press enter to continue...")
+        input("Press enter to continue...")
         run = False
+        break
     
 
     
