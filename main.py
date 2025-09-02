@@ -440,6 +440,15 @@ while run:
     os.system("cls") 
     check_enemy(current_area.enemy)   
 
+    # Checks if the final area is complete and ends game
+    if arena.complete:
+        print("You have freed your souls from this cruel game! You win!")
+        print("Final Status:")
+        display_player()
+        input("Press enter to continue...")
+        run = False
+        break
+
     # Checks if player died during battle
     if not run:
         break       # immediately break out of loop
@@ -451,15 +460,6 @@ while run:
     # If not, area is complete
     if current_area.enemy == None and current_area.item == None:
         current_area.complete = True
-
-    # Checks if the final area is complete and ends game
-    if arena.complete:
-        print("You have freed your souls from this cruel game! You win!")
-        print("Final Status:")
-        display_player()
-        input("Press enter to continue...")
-        run = False
-        break
     
 
     
